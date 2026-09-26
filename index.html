@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Md. Milton Ali | Professional Portfolio</title>
+<meta name="description" content="Md. Milton Ali — Officer, Administration | Hospital Administration, Operations, Reporting & Technology">
+<style>
+:root{--navy:#081c35;--blue:#1769aa;--cyan:#1ea7d7;--ink:#172033;--muted:#66758a;--bg:#f5f8fc;--white:#fff;--line:#e5ebf2;--shadow:0 20px 55px rgba(8,28,53,.12)}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+nav{position:fixed;top:0;width:100%;z-index:20;background:rgba(255,255,255,.90);backdrop-filter:blur(16px);border-bottom:1px solid rgba(229,235,242,.8)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:21px;color:var(--navy)}.logo span{color:var(--blue)}.navlinks{display:flex;gap:25px;font-size:14px;font-weight:700;color:#526176}.navlinks a:hover{color:var(--blue)}
+.hero{padding:142px 0 95px;background:radial-gradient(circle at 85% 25%,#dff4ff 0,transparent 30%),linear-gradient(135deg,#edf6ff,#fff 55%,#eefaff)}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}.badge{display:inline-block;padding:7px 14px;border-radius:30px;background:#e2f2ff;color:var(--blue);font-size:12px;font-weight:900;letter-spacing:1px}.hero h1{font-size:clamp(45px,6.5vw,76px);line-height:1;margin:18px 0 15px;color:var(--navy);letter-spacing:-3px}.hero h2{font-size:22px;line-height:1.4;color:var(--blue);margin:0 0 18px}.hero p{font-size:18px;color:#536277;max-width:700px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 20px;border-radius:10px;font-weight:800}.primary{background:var(--navy);color:#fff}.secondary{background:#fff;border:1px solid #cfd9e5}
+.profile-wrap{display:flex;justify-content:center}.profile{width:330px;height:390px;background:#fff;border-radius:28px;padding:12px;box-shadow:var(--shadow);transform:rotate(2deg)}.profile img{width:100%;height:100%;object-fit:cover;border-radius:20px;object-position:center top}.profile-label{margin-top:-58px;position:relative;margin-left:20px;background:rgba(8,28,53,.92);color:#fff;border-radius:12px;padding:12px 15px;width:calc(100% - 40px);font-size:13px}
+section{padding:92px 0}.white{background:#fff}.head{margin-bottom:38px}.eyebrow{text-transform:uppercase;letter-spacing:1.7px;font-size:12px;font-weight:900;color:var(--blue)}.title{font-size:40px;line-height:1.2;color:var(--navy);margin:8px 0}.subtitle{color:var(--muted);max-width:720px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 10px 35px rgba(8,28,53,.05)}.about .photo-card{padding:12px;overflow:hidden}.photo-card img{width:100%;height:360px;object-fit:cover;border-radius:14px}.photo-card .caption{padding:13px 8px 5px;font-weight:800;color:var(--navy)}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:12px}.skill{padding:13px 14px;background:#fbfcfe;border:1px solid var(--line);border-radius:10px;font-weight:700}
+.timeline{border-left:2px solid #dbe7f2;padding-left:30px}.job{position:relative;margin-bottom:42px}.job:before{content:"";position:absolute;left:-39px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--blue);border:4px solid #dff3ff}.job h3{margin:0;color:var(--navy);font-size:21px}.date{font-size:13px;color:var(--blue);font-weight:800}.job li{margin:5px 0}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}.feature img{width:100%;height:330px;object-fit:cover;border-radius:20px;box-shadow:var(--shadow)}.feature .card{display:flex;flex-direction:column;justify-content:center}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu strong{font-size:18px;color:var(--navy)}.edu small{display:block;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gitem{position:relative;overflow:hidden;border-radius:16px;background:#ddd;aspect-ratio:1/1;cursor:pointer}.gitem img{width:100%;height:100%;object-fit:cover;transition:.35s}.gitem:hover img{transform:scale(1.06)}.gitem span{position:absolute;bottom:0;left:0;right:0;padding:28px 12px 10px;color:#fff;font-size:12px;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.72));opacity:0;transition:.25s}.gitem:hover span{opacity:1}
+.contact{background:var(--navy);color:#fff}.contact .title{color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact .card{color:var(--ink)}.contact-item{padding:15px 0;border-bottom:1px solid #e5ebf2}.contact-item:last-child{border:0}footer{background:#06162a;color:#aeb9c8;text-align:center;padding:25px}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:50;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:88vh;border-radius:12px}.close{position:fixed;top:20px;right:28px;color:#fff;font-size:36px;cursor:pointer}
+@media(max-width:850px){.navlinks{display:none}.hero-grid,.about,.feature,.contact-grid{grid-template-columns:1fr}.profile{width:280px;height:340px}.gallery{grid-template-columns:repeat(2,1fr)}.edu,.skills{grid-template-columns:1fr}.title{font-size:32px}section{padding:68px 0}}
+
+/* Refined visual treatment */
+.profile-card .avatar{margin-bottom:0}
+.work-photo img{object-fit:contain !important;padding:12px !important}
+.gallery img,.gallery-item img{object-fit:contain !important;padding:10px !important}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#home">MD. MILTON ALI</a><div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#highlights">Highlights</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid"><div>
+<span class="badge">OFFICER – ADMINISTRATION</span><h1>Md. Milton Ali</h1><h2>Hospital Administration · Operations · Reporting · Technology</h2>
+<p>Administration professional experienced in hospital administration, regulatory & licensing management, utility and bill management, vendor coordination, documentation, reporting, inventory and day-to-day office operations.</p>
+<div class="actions"><a class="btn primary" href="#experience">Explore My Career</a><a class="btn secondary" href="#contact">Contact Me</a></div>
+</div><div class="profile-wrap"><div class="profile"><img src="images/photo-06.jpg" alt="Md. Milton Ali professional portrait"><div class="profile-label">Professional Profile<br><small>Administration & Operations</small></div></div></div></div></header>
+
+<section id="about"><div class="container"><div class="head"><div class="eyebrow">Profile</div><h2 class="title">About Me</h2></div>
+<div class="about"><div class="card"><p>Administration professional with experience in hospital administration, regulatory & licensing management, utility and bill management, vendor coordination, documentation, reporting, inventory and day-to-day office operations.</p><p>Strong working knowledge of Microsoft Office, graphics design, hardware/software maintenance and digital tools. Also experienced in using AI tools to support research, documentation, analysis, presentations, communication and productivity.</p><div class="eyebrow" style="margin-top:25px">Core Competencies</div><div class="skills" style="margin-top:13px"><div class="skill">Hospital & Office Administration</div><div class="skill">Regulatory & Licensing Support</div><div class="skill">Vendor & Service Coordination</div><div class="skill">Utility & Bill Management</div><div class="skill">Reporting & Documentation</div><div class="skill">Inventory & Asset Management</div><div class="skill">Microsoft Office & Data Handling</div><div class="skill">AI-Assisted Productivity</div></div></div>
+<div class="card photo-card"><img src="images/photo-01.jpg" alt="Md. Milton Ali at workplace"><div class="caption">At Work · Professional Administration Environment</div></div></div></div></section>
+
+<section id="experience" class="white"><div class="container"><div class="head"><div class="eyebrow">Career</div><h2 class="title">Professional Experience</h2><p class="subtitle">A career journey across healthcare administration, office operations, data management and technology training.</p></div>
+<div class="timeline">
+<div class="job"><h3>Asgar Ali Hospital Limited — Officer (Admin)</h3><div class="date">24 Jan 2026 – Present</div><ul><li>Maintain licenses, registrations and certifications; coordinate renewal processes and compliance documentation.</li><li>Monitor electricity, gas, water, telephone and internet bills; maintain consumption/expense records and coordinate service issues.</li><li>Support daily administrative functions, internal coordination, policy implementation, filing, official correspondence and training-module preparation.</li><li>Monitor office assets, repair/maintenance/replacement, inventory records and vendor coordination.</li><li>Liaise with external vendors, monitor service quality, follow up on maintenance issues and assist in vendor evaluation.</li><li>Prepare administrative reports, audit/inspection records, data analysis and presentations under HOD guidance.</li></ul></div>
+<div class="job"><h3>Urban Primary Health Care Services Delivery Project-II, DNCC, PA-1, Nari Maitree — Administration Assistant</h3><div class="date">01 Jan 2024 – 31 Oct 2025</div><ul><li>Maintained employee records including attendance, leave and personal information.</li><li>Managed medicine and family-planning instrument stock registers; monitored inventory and supply availability.</li><li>Coordinated meetings, training sessions and workshops, including required materials and resources.</li><li>Managed procurement and distribution of office supplies.</li><li>Used hospital management software for data entry, recordkeeping and reporting.</li><li>Prepared management reports and documentation for internal and external audits.</li><li>Handled incoming calls, emails and inquiries professionally.</li></ul></div>
+<div class="job"><h3>Zenith Islami Life Insurance Ltd. — Officer (Accounts & Underwriting)</h3><div class="date">01 Jun 2019 – 31 Dec 2019</div><ul><li>Prepared, sorted, entered and verified database information.</li><li>Resolved data discrepancies and followed up for incomplete information.</li><li>Created data backups and responded to authorized information requests.</li><li>Supported database system and software-update testing.</li></ul></div>
+<div class="job"><h3>M.S Media & Computer Training Center — Computer Trainer</h3><div class="date">02 Jan 2016 – 30 May 2019</div><ul><li>Delivered training on computer fundamentals, Microsoft Word, Excel, PowerPoint, web browsing and digital literacy.</li><li>Conducted practical sessions, assessed assignments/tests and supported learners.</li><li>Managed computer-lab hardware, software and routine troubleshooting.</li><li>Prepared training guides, practice sheets, attendance, schedules and performance reports.</li></ul></div>
+</div></div></section>
+
+<section id="highlights"><div class="container"><div class="head"><div class="eyebrow">Professional Highlights</div><h2 class="title">Work, People & Professional Moments</h2><p class="subtitle">Selected photographs are placed here to complement the career story without making the portfolio feel like a photo album.</p></div>
+<div class="feature"><img src="images/photo-02.jpg" alt="Professional workplace moment"><div class="card"><div class="eyebrow">Workplace</div><h2 style="color:var(--navy)">Administration in Action</h2><p>Professional workplace photography adds context to the portfolio and gives visitors a visual sense of the working environment.</p></div>
+<img src="images/photo-03.jpg" alt="Team moment"><div class="card"><div class="eyebrow">Team & Community</div><h2 style="color:var(--navy)">People & Collaboration</h2><p>Selected team and event photographs help show the human side of professional work, collaboration and organizational activities.</p></div>
+<img src="images/photo-04.jpg" alt="Professional feature photograph"><div class="card"><div class="eyebrow">Professional Presence</div><h2 style="color:var(--navy)">A Personal Career Story</h2><p>The portfolio combines professional identity with selected personal milestones while keeping the overall presentation polished.</p></div></div></div></section>
+
+<section id="education" class="white"><div class="container"><div class="head"><div class="eyebrow">Academic Background</div><h2 class="title">Education</h2></div><div class="edu">
+<div class="card"><strong>M.B.A</strong><small>N.S Govt. College, Natore · National University</small><small>Accounting · CGPA 3.19 / 4.00 · 2020</small></div>
+<div class="card"><strong>B.B.A (Hon's)</strong><small>Dighapatia M.K College, Natore · National University</small><small>Accounting · CGPA 3.08 / 4.00 · 2019</small></div>
+<div class="card"><strong>H.S.C</strong><small>Tamaltala Agriculture & Technical College, Natore · Rajshahi Board</small><small>Business Studies · GPA 4.08 / 5.00 · 2015</small></div>
+<div class="card"><strong>S.S.C</strong><small>Chalk Goash Begunia High School, Natore · Rajshahi Board</small><small>Science · GPA 4.13 / 5.00 · 2013</small></div>
+</div></div></section>
+
+<section><div class="container"><div class="head"><div class="eyebrow">Technology</div><h2 class="title">Technology, AI & Design Skills</h2></div><div class="about">
+<div class="card"><h3>AI Tools</h3><p>Working knowledge of ChatGPT, Google Gemini, Grok and Claude AI for research, drafting, analysis, idea generation, reporting, presentations and productivity workflows.</p></div>
+<div class="card"><h3>Microsoft Office</h3><p>Microsoft Word, Excel and PowerPoint for documentation, data handling, reporting and presentation preparation.</p></div>
+<div class="card"><h3>Graphics & Creative</h3><p>Adobe Photoshop and Adobe Illustrator for graphic design and visual content preparation.</p></div>
+<div class="card"><h3>IT Support</h3><p>Computer hardware/software maintenance, troubleshooting, internet browsing and effective use of online resources.</p></div>
+</div></div></section>
+
+<section id="gallery" class="white"><div class="container"><div class="head"><div class="eyebrow">Photo Gallery</div><h2 class="title">More From My Journey</h2><p class="subtitle">Additional photographs are kept here so the main portfolio remains clean and professional. Click any photo to view it larger.</p></div>
+<div class="gallery">
+<div class="gitem"><img src="images/photo-05.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-07.jpg" alt="Gallery photo"><span>Workplace</span></div>
+<div class="gitem"><img src="images/photo-08.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-09.jpg" alt="Gallery photo"><span>Team & Event</span></div>
+<div class="gitem"><img src="images/photo-10.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-11.jpg" alt="Gallery photo"><span>Workplace</span></div>
+<div class="gitem"><img src="images/photo-12.jpg" alt="Gallery photo"><span>Personal Moment</span></div>
+<div class="gitem"><img src="images/photo-13.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-14.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-15.jpg" alt="Gallery photo"><span>Personal Moment</span></div>
+<div class="gitem"><img src="images/photo-16.jpg" alt="Gallery photo"><span>Workplace</span></div>
+<div class="gitem"><img src="images/photo-17.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-18.jpg" alt="Gallery photo"><span>Personal Moment</span></div>
+<div class="gitem"><img src="images/photo-20.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+<div class="gitem"><img src="images/photo-21.jpg" alt="Gallery photo"><span>Professional Moment</span></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="head"><div class="eyebrow" style="color:#8edcff">Get In Touch</div><h2 class="title">Let's Connect</h2></div><div class="contact-grid"><div><p style="color:#c9d5e3;font-size:18px">For professional opportunities, administrative roles, collaboration or career-related communication, feel free to reach out.</p></div><div class="card"><div class="contact-item"><strong>Phone</strong><br>01788-274816</div><div class="contact-item"><strong>Email</strong><br><a href="mailto:milton.live247@gmail.com">milton.live247@gmail.com</a></div><div class="contact-item"><strong>Location</strong><br>111/1/A, Distilary Road, Gandaria, Dhaka-1204</div></div></div></div></section>
+<footer>© 2026 Md. Milton Ali · Professional Portfolio</footer>
+<div class="lightbox" id="lightbox"><div class="close" onclick="closeLightbox()">×</div><img id="lightboxImg" src="" alt="Expanded gallery image"></div>
+<script>
+document.querySelectorAll('.gitem img').forEach(img=>img.addEventListener('click',()=>{document.getElementById('lightboxImg').src=img.src;document.getElementById('lightbox').classList.add('open')}));
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
+document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox')closeLightbox()});
+</script>
+</body></html>
